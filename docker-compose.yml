@@ -10,7 +10,7 @@ services:
       dockerfile: nginx.dockerfile
     container_name: nginx
     ports:
-      - "8080:80"
+      - "80:80"
     volumes:
       - ./src:/var/www/html:delegated
     depends_on:
@@ -29,8 +29,8 @@ services:
     environment:
       MYSQL_DATABASE: homestead
       MYSQL_USER: homestead
-      MYSQL_PASSWORD: secret
-      MYSQL_ROOT_PASSWORD: secret
+      MYSQL_PASSWORD: DPMG53tmrty485MDRY
+      MYSQL_ROOT_PASSWORD: TDRY50mrhMQLT430btjy
       SERVICE_TAGS: dev
       SERVICE_NAME: mysql
     networks:
